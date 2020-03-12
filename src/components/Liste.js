@@ -36,7 +36,7 @@ export default class Liste extends Component {
 
     render() {
         return (
-            <div>
+            <React.Fragment>
                 {this.state.contacts.map(contact =>(
                     <Contact 
                     key={contact.id}
@@ -46,7 +46,7 @@ export default class Liste extends Component {
                     supClick={()=> this.sup(contact.id)}
                     />
                 ))}
-            </div>
+            </React.Fragment>
         )
     }
 }
